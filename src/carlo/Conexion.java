@@ -32,3 +32,34 @@ public class Conexion {
        return conectar; 
     }
 }
+
+
+
+
+
+/*
+
+
+
+CREATE DATABASE kira;
+USE kira;
+
+CREATE TABLE categoria (
+    id_categoria INT(10) NOT NULL,
+    nombre VARCHAR(10) NOT NULL,
+    PRIMARY KEY (id_categoria)
+);
+
+CREATE TABLE productos (
+    id_producto INT(10) NOT NULL,
+    nombre VARCHAR(10) NOT NULL,
+    precio INT(5) NOT NULL,
+    id_categoria INT(10) NOT NULL,
+    PRIMARY KEY (id_producto),
+    CONSTRAINT productos_ibfk_1 
+        FOREIGN KEY (id_categoria) 
+        REFERENCES categoria(id_categoria)
+);
+
+
+*/
